@@ -2,7 +2,7 @@
  * @Author: zhujian1995@outlook.com
  * @Date: 2021-04-16 14:36:14
  * @LastEditors: zhujian
- * @LastEditTime: 2021-04-18 17:05:58
+ * @LastEditTime: 2021-04-19 11:07:08
  * @Description: 你 kin 你擦
  */
 const { merge } = require('webpack-merge');
@@ -17,34 +17,14 @@ module.exports = merge(common, {
     rules: [
       {
         test: /\.scss$/,
-        use: [
-          'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              modules: {
-                localIdentName: '[path][name]_[local]',
-              },
-              importLoaders: 1,
-            },
-          },
-          'sass-loader',
-        ],
+        use: ['style-loader', 'css-loader', 'sass-loader'],
       },
       {
         test: /\.css$/,
         exclude: /node_modules/,
         use: [
           'style-loader',
-          {
-            loader: 'css-loader',
-            options: {
-              modules: {
-                localIdentName: '[path][name]_[local]',
-              },
-              importLoaders: 1,
-            },
-          },
+          'css-loader',
           {
             loader: 'postcss-loader',
             options: {

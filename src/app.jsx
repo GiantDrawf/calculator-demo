@@ -1,10 +1,6 @@
-import React from 'react';
-import Name from '@components/Component1';
+import Calculator from './lib/Calculator';
+import './style/global.scss';
+import './style/index.scss';
+import './style/flex.scss';
 
-export default function App() {
-  return (
-    <div>
-      Hello! <Name name="ZJ" />.
-    </div>
-  );
-}
+export default Calculator;

@@ -2,7 +2,7 @@
  * @Author: zhujian1995@outlook.com
  * @Date: 2021-04-16 14:36:05
  * @LastEditors: zhujian
- * @LastEditTime: 2021-04-18 17:06:29
+ * @LastEditTime: 2021-04-19 09:25:14
  * @Description: 你 kin 你擦
  */
 const path = require('path');
@@ -44,7 +44,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'React template',
+      title: '计算器-react',
       template: 'public/index.html',
     }),
   ],
