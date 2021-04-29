@@ -2,7 +2,7 @@
  * @Author: zhujian1995@outlook.com
  * @Date: 2021-04-16 14:36:22
  * @LastEditors: zhujian
- * @LastEditTime: 2021-04-19 11:07:21
+ * @LastEditTime: 2021-04-29 10:29:19
  * @Description: 你 kin 你擦
  */
 const { merge } = require('webpack-merge');
@@ -80,8 +80,8 @@ module.exports = merge(common, {
   },
   plugins: [
     new MiniCssPlugin({
-      filename: '/css/[name].[contenthash:8].css',
-      chunkFilename: '/css/[name].[contenthash:8].chunk.css',
+      filename: 'css/[name].[contenthash:8].css',
+      chunkFilename: 'css/[name].[contenthash:8].chunk.css',
     }),
   ],
 });
